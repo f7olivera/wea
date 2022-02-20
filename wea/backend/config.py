@@ -51,7 +51,7 @@ def create_config_file():
     default_display = {'temp': True,
                        'wind': True,
                        'pressure': True,
-                       'humidity': True,
+                       'rain': True,
                        'visibility': True}
     config = {'API': {'api_key': ''},
               'Location': {},

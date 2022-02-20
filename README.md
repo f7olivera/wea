@@ -1,6 +1,6 @@
 wea is an ASCII decorated command-line program that shows you a weather report in your terminal, for any location in the world and in multiple languages.
 
-![](https://raw.githubusercontent.com/f7olivera/wea/main/example.gif?token=GHSAT0AAAAAABREAWORHLNOWPGVTRQRGGGGYQIBLJA)
+![](https://github.com/f7olivera/wea/blob/dc89a02c970af8fb3477709f068d271d19742dad/example.gif)
 
 ## Features
 - Current weather report.
