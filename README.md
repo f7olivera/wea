@@ -1,4 +1,4 @@
-wea is an ASCII decorated command-line program that shows you a weather report in your terminal, for any location in the world and in multiple languages.
+wea is an ASCII decorated command-line program to get a weather report in your terminal, for any location and in multiple languages.
 
 ![](https://github.com/f7olivera/wea/blob/dc89a02c970af8fb3477709f068d271d19742dad/example.gif)
 
