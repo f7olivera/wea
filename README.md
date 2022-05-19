@@ -14,10 +14,11 @@ wea is an ASCII decorated command-line program to get a weather report in your t
 - Metric and imperial unit system.
 - Multilingual support.
 
-## Dependencies
+## Setup
+You will need
 - [Python >= 3.6](https://www.python.org/)
 - [pip](https://pypi.org)
-- wea also requires a free API key for OpenWeather. You can find yours [here](https://home.openweathermap.org/api_keys), after signin in.
+- a free API key for OpenWeather. You can find yours [here](https://home.openweathermap.org/api_keys), after signin in.
 
 ## Instalation
 Simply install wea by using [pip](https://pypi.org):
