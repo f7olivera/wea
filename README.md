@@ -32,7 +32,7 @@ You can see all available commands typing
 
 which displays the following help message:
 ```
-usage: wea.exe [-h] [-c | -f | -l  [...] | -u [default | metric | imperial] | --lang  | -k  | --config]
+usage: wea [-h] [-c | -f | -l  [...] | -u [default | metric | imperial] | --lang  | -k  | --config]
 
 options:
   -h, --help            show this help message and exit
