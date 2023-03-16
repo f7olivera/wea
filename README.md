@@ -21,7 +21,7 @@ You will need
 - a free API key for OpenWeather. You can find yours [here](https://home.openweathermap.org/api_keys), after signing in.
 
 ## Instalation
-Now you can install wea using [pip](https://pypi.org):
+You can install wea using [pip](https://pypi.org):
 
     pip install wea-clt
 
