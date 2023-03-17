@@ -1,7 +1,7 @@
 from requests import get
 from datetime import datetime
 from time import time
-from wea.backend.config import get_user_config
+from .config import get_user_config
 
 BASE_URL_FORECAST = 'https://api.openweathermap.org/data/2.5/forecast?'
 BASE_URL_TIMEMACHINE = 'https://api.openweathermap.org/data/2.5/onecall/timemachine?'

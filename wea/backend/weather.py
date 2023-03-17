@@ -2,10 +2,10 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from time import time
 from colorama import init, deinit
-from wea.backend.openweather import get_urls, get_response_content
-from wea.frontend.translations import location_prologue
-from wea.backend.config import get_user_config
-import wea.frontend.ui as ui
+from .openweather import get_urls, get_response_content
+from frontend.translations import location_prologue
+from .config import get_user_config
+from frontend import ui
 
 MORNING = [7, 8, 9]
 NOON = [11, 12, 13]

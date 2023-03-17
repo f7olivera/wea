@@ -2,9 +2,9 @@ import re
 from datetime import datetime
 from babel.dates import format_date
 from colorama import Style, Fore
-from wea.frontend.art import ASCII_ART, BRIGHTYELLOW
-from wea.backend.config import get_user_config
-from wea.frontend.translations import parts_of_day
+from .art import ASCII_ART, BRIGHTYELLOW
+from backend.config import get_user_config
+from .translations import parts_of_day
 
 WEATHER_UNITS = {
     'default': {

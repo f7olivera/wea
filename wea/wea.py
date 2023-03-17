@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 import argparse
 from sys import argv, exit
-from wea.backend.weather import Weather
-from wea.backend.config import set_location, set_unit_system, set_language, get_set_location, show_config, set_api_key
-from wea.backend.nominatim import get_geocoding_response, format_location
+from backend.weather import Weather
+from backend.config import set_location, set_unit_system, set_language, get_set_location, show_config, set_api_key
+from backend.nominatim import get_geocoding_response, format_location
 
 
 parser = argparse.ArgumentParser()

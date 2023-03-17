@@ -4,8 +4,8 @@ from difflib import get_close_matches
 from pick import pick
 from functools import lru_cache
 from pprint import pprint
-from wea.frontend import translations
-from wea.backend import nominatim
+from frontend import translations
+from backend import nominatim
 
 ROOT = os.path.abspath(os.path.dirname(__file__))
 

@@ -5,8 +5,8 @@ from requests import get
 from pytz import timezone, utc, UnknownTimeZoneError
 from datetime import datetime
 from timezonefinder.command_line import tf
-from wea.backend import config
-from wea.frontend import translations
+from frontend import translations
+from backend import config
 
 BASE_URL = 'https://nominatim.openstreetmap.org/'
 
