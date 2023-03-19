@@ -26,24 +26,24 @@ class Weather:
         >>> weather.print_weather()
         Weather forecast for: Buenos Aires
            .-.     Light rain
-          (   ).   24(24) °C
-         (___(__)  →  3 km/h
-        ‚‘‚‘‚‘‚‘   1006 hPa
-        ‚’‚’‚’‚    81
-                   10.0 km
+          (   ).   21(21) °C
+         (___(__)  ↖  18 km/h
+        ‚‘‚‘‚‘‚‘   1013 hPa
+        ‚’‚’‚’‚    1.15 mm | 100%
+                   6.1 km
 
     Attributes
 
-    •response_list : list
-        a list of JSON responses from OpenWeather, converted to dicts.
-    •current : dict
-        a formatted weather element.
-    •forecast : list
-        a list of formatted weather elements with weather conditions for the next 5 days.
-    •city : dict
-        OpenWeather's info about the location requested, containing sunrise and sunset hour.
-    •weather_type : str
-        must be either 'current' or 'forecast'. Otherwise, both reports are generated.
+        • response_list : list
+            a list of JSON responses from OpenWeather, converted to dicts.
+        • current : dict
+            a formatted weather element.
+        • forecast : list
+            a list of formatted weather elements with weather conditions for the next 5 days.
+        • city : dict
+            OpenWeather's info about the location requested, containing sunrise and sunset hour.
+        • weather_type : str
+            must be either 'current' or 'forecast'. Otherwise, both reports are generated.
     """
 
     response_list = []
