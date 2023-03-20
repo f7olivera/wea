@@ -1,0 +1,1 @@
+..\..\Scripts\python.exe .\test_weather_condition.py

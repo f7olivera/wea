@@ -30,9 +30,9 @@ class WeatherCondition(ABC):
 
 
 class Temperature(WeatherCondition):
-    def __init__(self, unit, value, intensity_color):
+    def __init__(self, unit, value, apparent_value):
         super().__init__(unit, value)
-        self.intensity_color = intensity_color
+        self.apparent_value = apparent_value
 
     def convert(unit):
         pass
@@ -59,14 +59,12 @@ class Temperature(WeatherCondition):
             return Fore.RED
 
     def __str__(self):
-        return f'{self.get_intensitiy_color(self.temp)}{self.temp}{Style.RESET_ALL}' \
-               f'({self.get_intensitiy_color(self.feels_like)}{self.feels_like}{Style.RESET_ALL}) {self.unit}'
+        return f'{self.value}({self.apparent_value}) {str(self.unit.value)}'
 
 
 class Wind(WeatherCondition):
-    def __init__(self, unit, velocity, intensity_color, direction):
+    def __init__(self, unit, velocity, direction):
         super().__init__(unit, velocity)
-        self.intensity_color = intensity_color
         self.direction = direction
 
     def convert(self, unit):
@@ -91,21 +89,21 @@ class Wind(WeatherCondition):
         elif 292.5 <= direction < 337.5:
             return '↘'
 
-        def get_intensitiy_color(self):
-            if self.unit == ImperialUnit.VELOCITY:
-                metric_velocity = self.value * 1.609
-            metric_velocity = int(self.value)
+    def get_intensitiy_color(self):
+        if self.unit == ImperialUnit.VELOCITY:
+            metric_velocity = self.value * 1.609
+        metric_velocity = int(self.value)
 
-            if 5 <= metric_velocity < 16:
-                return BRIGHTYELLOW
-            if 16 <= metric_velocity < 25:
-                return Fore.LIGHTGREEN_EX
-            if 25 <= metric_velocity < 30:
-                return Fore.GREEN
-            if 30 <= metric_velocity:
-                return Fore.RED
-            else:
-                return ''
+        if 5 <= metric_velocity < 16:
+            return BRIGHTYELLOW
+        if 16 <= metric_velocity < 25:
+            return Fore.LIGHTGREEN_EX
+        if 25 <= metric_velocity < 30:
+            return Fore.GREEN
+        if 30 <= metric_velocity:
+            return Fore.RED
+        else:
+            return ''
 
     def __str__(self):
         return f"{self.get_wind_direction()}  {super().__str__()}"

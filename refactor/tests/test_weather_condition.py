@@ -5,16 +5,14 @@ from refactor.unit import *
 
 class TestWeatherCondition(unittest.TestCase):
     def test_temperature(self):
-        temperature = Temperature(StandardUnit.TEMPERATURE, 20, 'blue')
+        temperature = Temperature(
+            StandardUnit.TEMPERATURE, value=20, apparent_value=19)
 
-        self.assertEqual(temperature.intensity_color, 'blue')
-        self.assertEqual(temperature.__str__(), f'20 K')
+        self.assertEqual(temperature.__str__(), f'20(19) K')
 
     def test_wind(self):
-        wind = Wind(ImperialUnit.VELOCITY,
-                    velocity=15, intensity_color="yellow", direction=360)
+        wind = Wind(ImperialUnit.VELOCITY, velocity=15, direction=360)
 
-        self.assertEqual(wind.intensity_color, 'yellow')
         self.assertEqual(wind.__str__(), f'↓  15 mph')
 
     def test_rain(self):
